@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습 - 틀</title>
+  </head>
+  <body>
+    <h1>넷째바오 100일 잔치 참석 신청서</h1>
+    <p>2026년 9월 11일, 에버랜드 판다월드에서 열립니다.</p>
+    이름 <input type="text" /><br />
+    연락처 <input type="tel" placeholder="010-0000-0000" /> <br />
+    이메일 <input type="email" /> <br />
+    넷째바오와의 관계
+    <select name="relationship">
+      <option selected disabled>선택해주세요</option>
+      <option value="family">가족 (바오패밀리)</option>
+      <option value="family">친구</option>
+      <option value="family">판다유치원 선생님</option>
+      <option value="family">팬</option>
+    </select>
+    <fieldset>
+      <legend>참석 여부</legend>
+      <label
+        ><input type="radio" name="join" id="possible" value="O" />참석</label
+      >
+      <label
+        ><input type="radio" name="join" id="impossible" value="X" />불참</label
+      >
+    </fieldset>
+    <fieldset>
+      <legend>준비해 올 선물</legend>
+      <label
+        ><input type="checkbox" name="present" value="Daenamoo" />대나무</label
+      >
+      <label
+        ><input type="checkbox" name="present" value="JookSoon" />죽순</label
+      >
+      <label><input type="checkbox" name="present" value="Toy" />장난감</label>
+      <label
+        ><input type="checkbox" name="present" value="Camera" />사진기</label
+      >
+    </fieldset>
+    도착 예정 시간 <input type="time" /><br />
+    축하 메시지
+    <textarea name="Selebration Message" id="Selebration Message"></textarea
+    ><br />
+    <button type="submit">신청하기</button>
+  </body>
+</html>
