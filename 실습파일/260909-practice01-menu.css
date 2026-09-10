@@ -1,0 +1,41 @@
+/* css 변수 : 색이나 폰트 등을 한 번만 등록. 사용하는 곳에서는 var() */
+:root {
+  --font: "Jua, sans-serif;";
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--foot);
+}
+
+h3 {
+  font-family: "Jua", sans-serif;
+  color: lightgreen;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.b-p {
+  font-weight: bold;
+  color: #ffaaaa;
+}
+
+.grey {
+  color: grey;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-grey2 {
+  text-align: center;
+  font-size: 20px;
+  color: grey;
+}
+
+#light-g {
+  color: lightgreen;
+}
