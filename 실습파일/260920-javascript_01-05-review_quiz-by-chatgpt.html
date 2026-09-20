@@ -95,6 +95,14 @@
         다시 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        var oneOfOne = "var변수";
+        let oneOfTwo = "let변수";
+        const oneOfThree = "const변수";
+        console.log(oneOfTwo);
+        oneOfTwo = "let변수 ver.2";
+        console.log(oneOfTwo);
+      </script>
       <details>
         <summary>힌트</summary>
         <p>
@@ -111,6 +119,14 @@
         각각의 자료형을 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        let str = "문자";
+        let num = 3;
+        let boo = true;
+        console.log(typeof str);
+        console.log(typeof num);
+        console.log(typeof boo);
+      </script>
     </div>
 
     <div class="question">
@@ -120,6 +136,12 @@
         변수 하나를 만들고, 값과 <code>typeof</code> 결과를 각각 확인하세요.
       </p>
       <textarea></textarea>
+      <script>
+        let none = "";
+        let nu = null;
+        console.log(none);
+        console.log(nu);
+      </script>
     </div>
 
     <div class="question">
@@ -129,6 +151,10 @@
         <strong>내 취미는 그림입니다.</strong>를 템플릿 리터럴로 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        const hobby = "그림";
+        console.log(`내 취미는 ${hobby}입니다.`);
+      </script>
       <details>
         <summary>힌트</summary>
         <p>백틱과 <code>${변수명}</code>을 사용했습니다.</p>
@@ -142,12 +168,24 @@
         나누기, 나머지를 각각 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        let ten = 10;
+        let thr = 3;
+        console.log(ten + thr);
+        console.log(ten - thr);
+        console.log(ten * thr);
+        console.log(ten / thr);
+        console.log(ten % thr);
+      </script>
     </div>
 
     <div class="question">
       <h3>6. parseInt</h3>
       <p>10을 3으로 나눈 결과에서 소수점 아래를 제거한 정수만 출력해보세요.</p>
       <textarea></textarea>
+      <script>
+        console.log(parseInt(ten / thr));
+      </script>
     </div>
 
     <div class="question">
@@ -158,6 +196,14 @@
         <code>typeof</code>도 확인하세요.
       </p>
       <textarea></textarea>
+      <script>
+        let oneHun = Number("100");
+        let oneHunStr = String(100);
+        let pieee = parseFloat("3.14");
+        console.log(typeof oneHun);
+        console.log(typeof oneHunStr);
+        console.log(typeof pieee);
+      </script>
     </div>
 
     <div class="question">
@@ -166,6 +212,9 @@
         <code>Number("Hello")</code>를 출력해서 어떤 결과가 나오는지 확인하세요.
       </p>
       <textarea></textarea>
+      <script>
+        console.log(Number("Hello"));
+      </script>
     </div>
 
     <div class="question">
@@ -176,6 +225,12 @@
         확인하세요.
       </p>
       <textarea></textarea>
+      <script>
+        console.log(Boolean("Hello"));
+        console.log(Boolean(""));
+        console.log(Boolean(0));
+        console.log(Boolean(1));
+      </script>
     </div>
 
     <div class="question">
@@ -185,6 +240,14 @@
         비교 연산자를 각각 사용해 결과를 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        const a = 100;
+        const b = "100";
+        console.log(a == b);
+        console.log(a === b);
+        console.log(a != b);
+        console.log(a !== b);
+      </script>
     </div>
 
     <div class="question">
@@ -194,6 +257,12 @@
         한 번씩 사용하세요.
       </p>
       <textarea></textarea>
+      <script>
+        console.log(100 < 200);
+        console.log(100 > 200);
+        console.log(100 <= 200);
+        console.log(100 >= 200);
+      </script>
     </div>
 
     <div class="question">
@@ -204,6 +273,12 @@
         작성하세요.
       </p>
       <textarea></textarea>
+      <script>
+        let x = 10;
+        let y = 20;
+        console.log(x < 12 && y > 15);
+        console.log(x <= 10 || y >= 25);
+      </script>
     </div>
 
     <div class="question">
@@ -213,6 +288,15 @@
         <code>1 || "JS"</code>를 각각 출력하고 결과를 비교하세요.
       </p>
       <textarea></textarea>
+      <script>
+        console.log("" && 12345);
+        console.log(null || "JS");
+        console.log(1 || "JS");
+      </script>
+      <!-- 해설 : "" / "JS" / 1
+       && → 앞이 false면 거기서 멈춤
+       || → 앞이 true면 거기서 멈춤
+      -->
     </div>
 
     <h2>02. 조건문</h2>
@@ -223,6 +307,14 @@
         <code>age</code>가 20 이상이면 “성인”, 아니면 “미성년자”를 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        let age = 22;
+        if (age >= 20) {
+          console.log("성인");
+        } else {
+          console.log("미성년자");
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -232,6 +324,10 @@
         작성하고 결과를 변수에 담아 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        const result = age >= 20 ? "성인" : "미성년자";
+        console.log(result);
+      </script>
     </div>
 
     <div class="question">
@@ -241,6 +337,17 @@
         외에는 유아를 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        if (age >= 20) {
+          console.log("성인");
+        } else if (age >= 14) {
+          console.log("청소년");
+        } else if (age >= 8) {
+          console.log("어린이");
+        } else {
+          console.log("유아");
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -250,6 +357,14 @@
         <code>if</code>문으로 짝수 또는 홀수를 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        const number = 7;
+        if (number % 2 === 1) {
+          console.log("홀수");
+        } else {
+          console.log("짝수");
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -259,6 +374,15 @@
         <code>break</code>와 <code>default</code>도 사용하세요.
       </p>
       <textarea></textarea>
+      <script>
+        switch (number % 2) {
+          case 0:
+            console.log("짝수");
+            break;
+          default:
+            console.log("홀수");
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -269,6 +393,19 @@
         로그인 성공 / 비밀번호 오류 / 아이디 오류를 구분하세요.
       </p>
       <textarea></textarea>
+      <script>
+        let id = "user1";
+        let pw = 1234;
+        if (id === "user1") {
+          if (pw === 1234) {
+            console.log("로그인 성공");
+          } else {
+            console.log("비밀번호를 확인하세요");
+          }
+        } else {
+          console.log("아이디를 확인하세요");
+        }
+      </script>
     </div>
 
     <h2>03. 배열</h2>
@@ -280,12 +417,22 @@
         <code>Array.isArray()</code> 결과를 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        let arr = [1, 2, 3, 4, 5];
+        console.log(arr);
+        console.log(Array.isArray(arr));
+      </script>
     </div>
 
     <div class="question">
       <h3>21. 인덱스 / length / 마지막 값</h3>
       <p>20번 배열에서 첫 번째 값, 배열 길이, 마지막 값을 각각 출력하세요.</p>
       <textarea></textarea>
+      <script>
+        console.log(arr[0]);
+        console.log(arr.length);
+        console.log(arr[arr.length - 1]);
+      </script>
       <details>
         <summary>힌트</summary>
         <p>
@@ -299,6 +446,13 @@
       <h3>22. push / unshift</h3>
       <p><code>[1,2,3]</code>의 맨 뒤에 4를 추가하고 맨 앞에 0을 추가하세요.</p>
       <textarea></textarea>
+      <script>
+        // push → 맨 뒤에 추가, unshift → 맨 앞에 추가`
+        let ott = [1, 2, 3];
+        ott.unshift(0);
+        ott.push(4);
+        console.log(ott);
+      </script>
     </div>
 
     <div class="question">
@@ -308,6 +462,12 @@
         추가하세요.
       </p>
       <textarea></textarea>
+      <script>
+        // splice (시작 인덱스, 삭제할 개수, 추가할 값)
+        let aphb = ["A", "B", "D"];
+        aphb.splice(2, 0, "C");
+        console.log(aphb);
+      </script>
     </div>
 
     <div class="question">
@@ -317,6 +477,16 @@
         원하는 인덱스 삭제를 각각 연습하세요.
       </p>
       <textarea></textarea>
+      <script>
+        let alphabet = ["A", "B", "C", "D", "E"];
+        alphabet.pop(); // 맨 뒤 삭제
+        console.log(alphabet);
+        alphabet.shift(); // 맨 앞 삭제
+        // pop과 shift는 () 안에 아무 숫자도 넣지 않아도 된다.
+        console.log(alphabet);
+        alphabet.splice(1, 1); // 인덱스 1의 요소 1개 삭제
+        console.log(alphabet);
+      </script>
     </div>
 
     <div class="question">
@@ -326,6 +496,12 @@
         값을 “복숭아”로 바꾸세요.
       </p>
       <textarea></textarea>
+      <script>
+        let fruits = ["사과", "포도", "수박"];
+        // 인덱스 값을 직접 이용해 값을 바로 수정할 수 있다.
+        fruits[1] = "복숭아";
+        console.log(fruits);
+      </script>
     </div>
 
     <div class="question">
@@ -335,6 +511,14 @@
         인덱스를 찾고 그 값을 “딸기”로 바꾸세요.
       </p>
       <textarea></textarea>
+      <script>
+        let fruits2 = ["사과", "포도", "수박"];
+        console.log(fruits2.indexOf("포도"));
+        let idx = fruits2.indexOf("포도");
+        fruits2[idx] = "딸기";
+        console.log(fruits2);
+        // 변수명.indexOf로 값을 찾은 후 -> 그 인덱스를 변수에 담아 -> 그 인덱스를 이용해 값을 수정
+      </script>
     </div>
 
     <div class="question">
@@ -344,6 +528,13 @@
         바꾸세요.
       </p>
       <textarea></textarea>
+      <script>
+        let numb = [30, 5, 100, 20];
+        numb.sort((a, b) => a - b);
+        console.log(numb);
+        numb.reverse();
+        console.log(numb);
+      </script>
     </div>
 
     <div class="question">
@@ -353,6 +544,15 @@
         배열을 <code>" / "</code>로 연결한 문자열로 다시 만드세요.
       </p>
       <textarea></textarea>
+      <script>
+        let codelang = "HTML-CSS-JS";
+        // split → 문자열을 배열로 바꿀 때 사용
+        let resultSplit = codelang.split("-");
+        console.log(resultSplit);
+        // join → 배열을 문자열로 바꿀 때 사용
+        let resultJoin = resultSplit.join("/");
+        console.log(resultJoin);
+      </script>
     </div>
 
     <div class="question">
@@ -362,6 +562,11 @@
         다른 변수에 담고 첫 번째 변수를 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        // 구조 분해 할당 → 배열의 값을 각각 다른 변수에 담을 때 사용. 변수명을 지정하지 않고 바로 배열의 값을 변수에 담을 수 있다.
+        let [q, w, e] = ["짱구", "유리", "철수"];
+        console.log(q);
+      </script>
     </div>
 
     <div class="question">
@@ -371,6 +576,11 @@
         <code>...</code>로 하나의 새 배열로 합치세요.
       </p>
       <textarea></textarea>
+      <script>
+        ott = [1, 2, 3];
+        let ffs = [4, 5, 6];
+        console.log(...ott, ...ffs);
+      </script>
     </div>
 
     <h2>04. 반복문</h2>
