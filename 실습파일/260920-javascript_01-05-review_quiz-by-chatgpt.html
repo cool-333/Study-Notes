@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 01~05 뉴비 복습 퀴즈</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        max-width: 920px;
+        margin: 40px auto;
+        padding: 0 22px 100px;
+        font-family: Arial, "Noto Sans KR", sans-serif;
+        line-height: 1.7;
+        color: #222;
+      }
+      h1 {
+        margin-bottom: 6px;
+      }
+      h2 {
+        margin-top: 54px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #bbb;
+      }
+      h3 {
+        margin-top: 0;
+      }
+      .intro {
+        padding: 16px 18px;
+        background: #f5f5f5;
+        border-radius: 10px;
+      }
+      .question {
+        margin: 22px 0;
+        padding: 18px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+      .question p {
+        margin-bottom: 10px;
+      }
+      code {
+        padding: 2px 5px;
+        background: #f2f2f2;
+        border-radius: 4px;
+      }
+      textarea {
+        width: 100%;
+        min-height: 105px;
+        padding: 10px;
+        resize: vertical;
+        border: 1px solid #bbb;
+        border-radius: 6px;
+        font-family: Consolas, monospace;
+      }
+      details {
+        margin-top: 10px;
+        color: #555;
+      }
+      .level {
+        font-size: 14px;
+        color: #666;
+      }
+      .final {
+        border-width: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript 01~05 뉴비 복습 퀴즈</h1>
+    <div class="intro">
+      <p>
+        <strong>순서:</strong> 01 변수와 연산자 → 02 조건문 → 03 배열 → 04
+        반복문 → 05 함수
+      </p>
+      <p>
+        수업에서 나온 개념을 하나씩 직접 써보는 용도입니다. 정답은 넣지
+        않았습니다. 먼저 직접 작성하고, 막히면 힌트만 열어보세요.
+      </p>
+      <p>
+        작성한 코드는 VS Code의 <code>&lt;script&gt;</code> 안에 옮겨 실행하고
+        브라우저 Console에서 결과를 확인하세요.
+      </p>
+    </div>
+
+    <h2>01. 변수와 연산자</h2>
+
+    <div class="question">
+      <h3>1. var / let / const</h3>
+      <p>
+        <code>var</code>, <code>let</code>, <code>const</code>를 각각 한 번씩
+        사용해 변수를 선언하세요. 그중 <code>let</code>으로 만든 값만 한 번 바꿔
+        다시 출력하세요.
+      </p>
+      <textarea></textarea>
+      <details>
+        <summary>힌트</summary>
+        <p>
+          수업에서는 var는 예전 문법, let은 값 변경 가능, const는 값 변경 불가로
+          다뤘습니다.
+        </p>
+      </details>
+    </div>
+
+    <div class="question">
+      <h3>2. string / number / boolean + typeof</h3>
+      <p>
+        문자열, 숫자, Boolean 값을 하나씩 변수에 저장하고 <code>typeof</code>로
+        각각의 자료형을 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>3. undefined / null</h3>
+      <p>
+        값을 넣지 않은 <code>let</code> 변수 하나와 <code>null</code>을 넣은
+        변수 하나를 만들고, 값과 <code>typeof</code> 결과를 각각 확인하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>4. 템플릿 리터럴</h3>
+      <p>
+        <code>const hobby = "그림";</code>을 이용해
+        <strong>내 취미는 그림입니다.</strong>를 템플릿 리터럴로 출력하세요.
+      </p>
+      <textarea></textarea>
+      <details>
+        <summary>힌트</summary>
+        <p>백틱과 <code>${변수명}</code>을 사용했습니다.</p>
+      </details>
+    </div>
+
+    <div class="question">
+      <h3>5. 사칙연산 / 나머지</h3>
+      <p>
+        <code>10</code>과 <code>3</code>을 변수에 저장하고 더하기, 빼기, 곱하기,
+        나누기, 나머지를 각각 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>6. parseInt</h3>
+      <p>10을 3으로 나눈 결과에서 소수점 아래를 제거한 정수만 출력해보세요.</p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>7. Number / String / parseFloat</h3>
+      <p>
+        문자열 <code>"100"</code>을 숫자로, 숫자 <code>100</code>을 문자열로,
+        문자열 <code>"3.14"</code>를 실수로 변환하세요. 각각
+        <code>typeof</code>도 확인하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>8. NaN</h3>
+      <p>
+        <code>Number("Hello")</code>를 출력해서 어떤 결과가 나오는지 확인하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>9. Boolean 변환</h3>
+      <p>
+        <code>"Hello"</code>, 빈 문자열 <code>""</code>, <code>0</code>,
+        <code>1</code>을 각각 <code>Boolean()</code>으로 변환해 결과를
+        확인하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>10. == / === / != / !==</h3>
+      <p>
+        <code>const a = 100;</code>, <code>const b = "100";</code>을 준비하고 네
+        비교 연산자를 각각 사용해 결과를 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>11. &lt; &gt; &lt;= &gt;=</h3>
+      <p>
+        <code>100</code>과 <code>200</code>을 사용해 네 가지 크기 비교 연산자를
+        한 번씩 사용하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>12. && / ||</h3>
+      <p>
+        <code>x = 10</code>, <code>y = 20</code>일 때 두 조건이 모두 참인 식을
+        <code>&&</code>로, 둘 중 하나만 참이어도 되는 식을 <code>||</code>로
+        작성하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>13. 단축 평가</h3>
+      <p>
+        <code>"" && 12345</code>, <code>null || "JS"</code>,
+        <code>1 || "JS"</code>를 각각 출력하고 결과를 비교하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <h2>02. 조건문</h2>
+
+    <div class="question">
+      <h3>14. if / else</h3>
+      <p>
+        <code>age</code>가 20 이상이면 “성인”, 아니면 “미성년자”를 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>15. 삼항 연산자</h3>
+      <p>
+        14번과 같은 판정을 <code>조건 ? true일 때 : false일 때</code> 형태로
+        작성하고 결과를 변수에 담아 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>16. else if</h3>
+      <p>
+        나이가 20 이상이면 성인, 14 이상이면 청소년, 8 이상이면 어린이, 그
+        외에는 유아를 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>17. 나머지로 짝수 / 홀수 판별</h3>
+      <p>
+        <code>const number = 7;</code>을 2로 나눈 나머지를 이용해
+        <code>if</code>문으로 짝수 또는 홀수를 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>18. switch / case / break / default</h3>
+      <p>
+        17번의 짝수/홀수 판별을 이번에는 <code>switch</code>문으로 작성하세요.
+        <code>break</code>와 <code>default</code>도 사용하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>19. 중첩 if</h3>
+      <p>
+        아이디가 <code>"user1"</code>인지 먼저 검사하고, 맞을 때만 안쪽
+        <code>if</code>에서 비밀번호가 <code>"1234"</code>인지 검사하세요.
+        로그인 성공 / 비밀번호 오류 / 아이디 오류를 구분하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <h2>03. 배열</h2>
+
+    <div class="question">
+      <h3>20. 배열 / Array.isArray</h3>
+      <p>
+        숫자 5개가 들어 있는 배열을 만들고 배열 전체와
+        <code>Array.isArray()</code> 결과를 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>21. 인덱스 / length / 마지막 값</h3>
+      <p>20번 배열에서 첫 번째 값, 배열 길이, 마지막 값을 각각 출력하세요.</p>
+      <textarea></textarea>
+      <details>
+        <summary>힌트</summary>
+        <p>
+          배열 인덱스는 0부터 시작합니다. 마지막 값에는
+          <code>length - 1</code>을 활용할 수 있습니다.
+        </p>
+      </details>
+    </div>
+
+    <div class="question">
+      <h3>22. push / unshift</h3>
+      <p><code>[1,2,3]</code>의 맨 뒤에 4를 추가하고 맨 앞에 0을 추가하세요.</p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>23. splice로 추가</h3>
+      <p>
+        <code>["A","B","D"]</code>의 B와 D 사이에 C를 <code>splice</code>로
+        추가하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>24. pop / shift / splice로 삭제</h3>
+      <p>
+        <code>["A","B","C","D","E"]</code>를 준비하세요. 맨 뒤 삭제, 맨 앞 삭제,
+        원하는 인덱스 삭제를 각각 연습하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>25. 배열 요소 수정</h3>
+      <p>
+        <code>["사과","포도","수박"]</code>에서 인덱스를 직접 사용해 두 번째
+        값을 “복숭아”로 바꾸세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>26. indexOf + 수정</h3>
+      <p>
+        <code>["사과","포도","수박"]</code>에서 <code>indexOf</code>로 “포도”의
+        인덱스를 찾고 그 값을 “딸기”로 바꾸세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>27. sort / reverse</h3>
+      <p>
+        <code>[30,5,100,20]</code>을 숫자 오름차순으로 정렬한 뒤, 다시 역순으로
+        바꾸세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>28. split / join</h3>
+      <p>
+        <code>"HTML-CSS-JS"</code>를 <code>-</code> 기준으로 배열로 바꾼 뒤, 그
+        배열을 <code>" / "</code>로 연결한 문자열로 다시 만드세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>29. 구조 분해 할당</h3>
+      <p>
+        <code>["짱구","유리","철수"]</code>의 세 값을 구조 분해 할당으로 각각
+        다른 변수에 담고 첫 번째 변수를 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>30. 전개 연산자</h3>
+      <p>
+        <code>[1,2,3]</code>과 <code>[4,5,6]</code>을 전개 연산자
+        <code>...</code>로 하나의 새 배열로 합치세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <h2>04. 반복문</h2>
+
+    <div class="question">
+      <h3>31. 기본 for문</h3>
+      <p><code>for</code>문으로 1부터 10까지 출력하세요.</p>
+      <textarea></textarea>
+      <details>
+        <summary>힌트</summary>
+        <p><code>for (초기값; 조건식; 증감식)</code> 순서입니다.</p>
+      </details>
+    </div>
+
+    <div class="question">
+      <h3>32. 전위 / 후위 증감 연산자</h3>
+      <p>
+        <code>let num = 1;</code>을 만든 뒤 <code>++num</code>,
+        <code>num++</code>, <code>--num</code>, <code>num--</code>을 출력하며
+        차이를 확인하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>33. 복합대입연산자</h3>
+      <p>
+        <code>let num = 10;</code>에 <code>+=</code>, <code>-=</code>,
+        <code>*=</code>, <code>/=</code>를 각각 한 번씩 사용하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>34. 감소하는 for문</h3>
+      <p>30부터 시작해서 3씩 감소하며 3까지 출력하세요.</p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>35. 배열 + 기본 for문</h3>
+      <p>
+        <code>["HTML","CSS","JavaScript"]</code>의 모든 값을 기본
+        <code>for</code>문과 <code>length</code>를 사용해 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>36. for...in</h3>
+      <p>
+        35번 배열을 사용해 <code>for...in</code>으로 배열의 인덱스를 하나씩
+        출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>37. for...of</h3>
+      <p>
+        35번 배열을 사용해 <code>for...of</code>로 배열의 값을 하나씩
+        출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>38. while</h3>
+      <p>
+        <code>while</code>문으로 1부터 10까지 출력하세요. 무한 반복이 되지
+        않도록 증감식을 잊지 마세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>39. break</h3>
+      <p>
+        1부터 계속 출력하되 숫자가 7이 되면 <code>break</code>로 반복문을 완전히
+        끝내세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>40. continue</h3>
+      <p>
+        1부터 9까지 반복하면서 2만 <code>continue</code>로 건너뛰고 나머지를
+        출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>41. 2차원 배열 / 중첩 for문</h3>
+      <p>
+        <code>[[1,2,3],[4,5],[6,7,8,9]]</code>의 모든 숫자를 중첩
+        <code>for</code>문으로 하나씩 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>42. 2차원 배열 / 중첩 for...of</h3>
+      <p>
+        41번 배열의 모든 숫자를 이번에는 중첩 <code>for...of</code>로
+        출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <h2>05. 함수</h2>
+
+    <div class="question">
+      <h3>43. 매개변수 X / return X</h3>
+      <p>
+        매개변수도 없고 <code>return</code>도 없는 <code>sayHello</code> 함수를
+        만들어 “안녕하세요!”를 출력하고, 함수를 직접 호출하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>44. 매개변수 O / return X + 기본값</h3>
+      <p>
+        이름을 매개변수로 받아 “OO님, 안녕하세요!”를 출력하는 함수를 만드세요.
+        아무 값도 전달하지 않았을 때 사용할 기본값도 지정하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>45. 매개변수 X / return O</h3>
+      <p>
+        매개변수는 없고 숫자 하나를 <code>return</code>하는 함수를 만드세요.
+        함수만 호출했을 때와 <code>console.log()</code> 안에서 호출했을 때를
+        각각 확인하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>46. 매개변수 O / return O</h3>
+      <p>
+        숫자 두 개를 매개변수로 받아 더한 값을 <code>return</code>하는 함수를
+        만들고 서로 다른 숫자로 두 번 호출하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>47. return은 함수 종료</h3>
+      <p>
+        함수 안에서 <code>return</code> 뒤에
+        <code>console.log("여기까지 올까요?")</code>를 작성하고 함수를
+        호출해보세요. 어떤 코드까지 실행되는지 확인하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>48. 전역 변수 / 지역 변수 Scope</h3>
+      <p>
+        함수 밖과 함수 안에 같은 이름의 변수를 서로 다른 값으로 선언하세요. 함수
+        내부와 외부에서 각각 출력해 어떤 값이 나오는지 확인하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>49. 선언적 함수</h3>
+      <p>숫자 두 개를 곱해 반환하는 선언적 함수를 작성하고 호출하세요.</p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>50. 익명 함수</h3>
+      <p>숫자 두 개를 빼서 반환하는 이름 없는 함수를 변수에 담고 호출하세요.</p>
+      <textarea></textarea>
+      <details>
+        <summary>힌트</summary>
+        <p>
+          수업에서는
+          <code>const 변수명 = function (매개변수) { ... }</code> 형태를
+          사용했습니다.
+        </p>
+      </details>
+    </div>
+
+    <div class="question">
+      <h3>51. 화살표 함수</h3>
+      <p>
+        숫자 두 개를 나눠 반환하는 함수를 <code>=&gt;</code>를 사용해
+        작성하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>52. 콜백 함수</h3>
+      <p>
+        다른 함수를 매개변수로 받는 함수를 하나 만들고, 전달받은 함수를 내부에서
+        호출하세요.
+      </p>
+      <textarea></textarea>
+      <details>
+        <summary>힌트</summary>
+        <p>
+          수업의 <code>callFunc(callback)</code>처럼 “함수를 값으로 전달하고
+          내부에서 <code>callback()</code>을 호출한다”는 흐름을 떠올려보세요.
+        </p>
+      </details>
+    </div>
+
+    <div class="question">
+      <h3>53. forEach</h3>
+      <p>
+        <code>[1,2,3,4,5]</code>의 각 값을 <code>forEach</code>로 하나씩
+        출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>54. map</h3>
+      <p>
+        <code>[1,2,3,4,5]</code>의 각 값에 2를 곱한 <strong>새 배열</strong>을
+        <code>map</code>으로 만들고 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>55. filter</h3>
+      <p>
+        <code>[1,2,3,4,5]</code>에서 짝수만 골라낸 <strong>새 배열</strong>을
+        <code>filter</code>로 만들고 출력하세요.
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question">
+      <h3>56. reduce</h3>
+      <p>
+        <code>[1,2,3,4,5]</code>의 모든 값을 <code>reduce</code>로 더해 하나의
+        합계를 만드세요. 누적값의 초기값은 0으로 시작하세요.
+      </p>
+      <textarea></textarea>
+      <details>
+        <summary>힌트</summary>
+        <p>
+          <code>acc</code>는 지금까지 누적된 값, <code>value</code>는 현재 배열
+          값입니다.
+        </p>
+      </details>
+    </div>
+
+    <h2>마지막 종합 연습</h2>
+
+    <div class="question final">
+      <h3>57. 변수 + 배열 + 반복문 + 조건문</h3>
+      <p>
+        <code>const scores = [70,85,100,45,90];</code>의 모든 점수를 반복해서
+        확인하고, 60점 이상인 점수만 새 배열에 추가한 뒤 출력하세요.
+      </p>
+      <p class="level">
+        생각 순서: 새 배열 준비 → 반복 → 조건 검사 → 조건에 맞으면 추가
+      </p>
+      <textarea></textarea>
+    </div>
+
+    <div class="question final">
+      <h3>58. 배열 + 함수 + filter</h3>
+      <p>
+        숫자 배열을 매개변수로 받으면 그중 짝수만 골라 새 배열로
+        <code>return</code>하는 함수를 만들어보세요. 함수 안에서는
+        <code>filter</code>를 사용하세요.
+      </p>
+      <p class="level">05까지 배운 내용을 실제로 연결해보는 문제입니다.</p>
+      <textarea></textarea>
+    </div>
+  </body>
+</html>
