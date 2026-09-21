@@ -593,6 +593,11 @@
         <summary>힌트</summary>
         <p><code>for (초기값; 조건식; 증감식)</code> 순서입니다.</p>
       </details>
+      <script>
+        for (let i = 1; i <= 10; i++) {
+          console.log(i);
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -603,6 +608,13 @@
         차이를 확인하세요.
       </p>
       <textarea></textarea>
+      <script>
+        num = 1;
+        console.log(++num);
+        console.log(num++);
+        console.log(--num);
+        console.log(num--);
+      </script>
     </div>
 
     <div class="question">
@@ -612,12 +624,24 @@
         <code>*=</code>, <code>/=</code>를 각각 한 번씩 사용하세요.
       </p>
       <textarea></textarea>
+      <script>
+        num = 10;
+        console.log((num += 5));
+        console.log((num -= 3));
+        console.log((num *= 3));
+        console.log((num /= 6));
+      </script>
     </div>
 
     <div class="question">
       <h3>34. 감소하는 for문</h3>
       <p>30부터 시작해서 3씩 감소하며 3까지 출력하세요.</p>
       <textarea></textarea>
+      <script>
+        for (let j = 30; j >= 3; j -= 3) {
+          console.log(j);
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -627,6 +651,13 @@
         <code>for</code>문과 <code>length</code>를 사용해 출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        // for (시작값 선언; 최대값; 증감식)
+        codelang = ["HTML", "CSS", "JavaScript"];
+        for (let k = 0; k < 3; k++) {
+          console.log(codelang[k]);
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -636,6 +667,12 @@
         출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        // for...in은 인덱스
+        for (let index in codelang) {
+          console.log(index);
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -645,6 +682,12 @@
         출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        // for...of는 값
+        for (let items of codelang) {
+          console.log(items);
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -654,6 +697,13 @@
         않도록 증감식을 잊지 마세요.
       </p>
       <textarea></textarea>
+      <!-- let으로 변수명을 먼저 선언 -->
+      <script>
+        let l = 1;
+        while (l <= 10) {
+          console.log(l++);
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -663,6 +713,16 @@
         끝내세요.
       </p>
       <textarea></textarea>
+      <script>
+        let m = 1;
+        while (m <= 7) {
+          console.log(m);
+          if (m === 7) {
+            break;
+          }
+          m++;
+        }
+      </script>
     </div>
 
     <div class="question">
@@ -672,6 +732,18 @@
         출력하세요.
       </p>
       <textarea></textarea>
+      <script>
+        //           완전히 틀린 문제           //
+        let n = 1;
+        while (n <= 9) {
+          if (n === 2) {
+            n++;
+            continue;
+          }
+          console.log(n);
+          n++;
+        }
+      </script>
     </div>
 
     <div class="question">
